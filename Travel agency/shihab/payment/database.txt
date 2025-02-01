@@ -1,0 +1,35 @@
+CREATE DATABASE IF NOT EXISTS webtech;
+
+USE webtech;
+
+
+create payment table.................
+CREATE TABLE IF NOT EXISTS payment (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    NAME VARCHAR(255),
+    AMOUNT DECIMAL(10,2)
+);
+
+
+create transaction_history table..................
+CREATE TABLE IF NOT EXISTS transaction_history (
+    ID INT,
+    NAME VARCHAR(255),
+    tour_id INT,
+    transaction_id INT AUTO_INCREMENT PRIMARY KEY,
+    AMOUNT DECIMAL(10,2),
+    payment_method VARCHAR(50),
+    payment_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+value.....................
+INSERT INTO payment (NAME, AMOUNT) VALUES ('John Doe', 100.00);
+INSERT INTO payment (NAME, AMOUNT) VALUES ('Alice Smith', 50.00);
+INSERT INTO payment (NAME, AMOUNT) VALUES ('Bob Johnson', 75.00);
+INSERT INTO payment (NAME, AMOUNT) VALUES ('Mary Brown', 120.00);
+INSERT INTO payment (NAME, AMOUNT) VALUES ('David Lee', 90.00);
+INSERT INTO payment (NAME, AMOUNT) VALUES ('Sarah Miller', 65.00);
+INSERT INTO payment (NAME, AMOUNT) VALUES ('James Wilson', 150.00);
+INSERT INTO payment (NAME, AMOUNT) VALUES ('Emily Davis', 80.00);
+INSERT INTO payment (NAME, AMOUNT) VALUES ('Michael Taylor', 110.00);
+INSERT INTO payment (NAME, AMOUNT) VALUES ('Jessica Martinez', 95.00);

@@ -1,0 +1,24 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .package {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #fff;
+        }
+
+        .package h2 {
+            color: #007bff;
+        }
+
+        .package p {
+            margin: 10px 0;
+        }
+    

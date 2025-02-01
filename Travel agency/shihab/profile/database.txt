@@ -1,0 +1,66 @@
+database name is webtech...........
+
+CREATE TABLE profile (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    phone VARCHAR(20) NOT NULL,
+    dob DATE NOT NULL,
+    gender ENUM('male', 'female') NOT NULL,
+    user_type ENUM('normal', 'admin') NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+value for table...........
+INSERT INTO profile (name, email, phone, dob, gender, user_type) VALUES
+('John Doe', 'john@example.com', '1234567890', '1990-05-15', 'male', 'admin'),
+('Jane Smith', 'jane@example.com', '9876543210', '1985-08-25', 'female', 'normal'),
+('Michael Johnson', 'michael@example.com', '5551234567', '1978-12-10', 'male', 'normal'),
+('Emily Brown', 'emily@example.com', '6669876543', '1995-03-20', 'female', 'admin'),
+('David Williams', 'david@example.com', '1112223344', '1982-06-30', 'male', 'normal'),
+('Sarah Davis', 'sarah@example.com', '7778889999', '1993-09-05', 'female', 'normal'),
+('Robert Wilson', 'robert@example.com', '3334445566', '1987-01-18', 'male', 'admin'),
+('Jessica Taylor', 'jessica@example.com', '9998887776', '1991-04-12', 'female', 'normal'),
+('William Martinez', 'william@example.com', '4445556677', '1980-11-28', 'male', 'admin'),
+('Amanda Jones', 'amanda@example.com', '2223334455', '1997-07-08', 'female', 'normal');
+
+add profile picture.........
+ALTER TABLE profile
+ADD COLUMN picture VARCHAR(255);
+
+add column for password............
+ALTER TABLE profile ADD COLUMN password VARCHAR(255);
+
+add password value..........
+UPDATE profile
+SET password = 'Pa$$w0rd123'
+WHERE id = 1;
+UPDATE profile
+SET password = 'Secret@123'
+WHERE id = 2;
+UPDATE profile
+SET password = 'StrongP@ssw0rd'
+WHERE id = 3;
+UPDATE profile
+SET password = 'SecurePassword123'
+WHERE id = 4;
+UPDATE profile
+SET password = 'Pa$$w0rd987'
+WHERE id = 5;
+UPDATE profile
+SET password = 'Secret123!'
+WHERE id = 6;
+UPDATE profile
+SET password = 'RandomP@ss'
+WHERE id = 7;
+UPDATE profile
+SET password = 'P@ssw0rdSecure'
+WHERE id = 8;
+UPDATE profile
+SET password = 'Secure1234!'
+WHERE id = 9;
+UPDATE profile
+SET password = 'Str0ngP@ss'
+WHERE id = 10;
+
+
